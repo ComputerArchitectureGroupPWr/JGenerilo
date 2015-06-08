@@ -1,0 +1,11 @@
+{
+    "database": {
+        "name": "JGeneriloDB",
+        "heaters collections": {
+            "virtex5": "virtex5heaters"
+        },
+        "thermometers collections": {
+            "virtex5": "virtex5thermometers"
+        }
+    }
+}

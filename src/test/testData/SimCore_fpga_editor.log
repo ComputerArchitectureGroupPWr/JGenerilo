@@ -1,0 +1,20 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   SPARC M2.1 O.76xd
+#Current Working Directory:
+#:D   /home/pawel/Development/JGenerilo/src/test/testData
+#Host Name:
+#:H   tywin
+#Date/Time:
+#:T   Mon Feb  9 17:31:40 2015
+#------------------------------
+	#Reading SimCore.ncd...
+	#Loading device for application Rf_Device from file '5vlx110t.nph' in environment /opt/Xilinx/13.3/ISE_DS/ISE/.
+	#   "SimCore" is an NCD, version 3.2, device xc5vlx110t, package ff1136, speed -2
+	#Design creation date: 2014.04.03.15.56.29
+	#WARNING:FPGAEditor:589 - Constraint file not found, or cannot be read.
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes

@@ -1,0 +1,341 @@
+{
+    "type": "FFPL",
+    "CLBsize": 1,
+    "instancesNum": 2,
+    "instances": [
+        {
+            "name": "upper",
+            "primitiveType": "SLICEL",
+            "attributes": [
+                {
+                    "physicalName": "AFF",
+                    "logicalName": "",
+                    "value": "#FF"
+                },
+                {
+                    "physicalName": "AFFSR",
+                    "logicalName": "",
+                    "value": "SRLOW"
+                },
+                {
+                    "physicalName": "AFFINIT",
+                    "logicalName": "",
+                    "value": "INIT1"
+                },
+                {
+                    "physicalName": "BFF",
+                    "logicalName": "",
+                    "value": "#FF"
+                },
+                {
+                    "physicalName": "BFFSR",
+                    "logicalName": "",
+                    "value": "SRLOW"
+                },
+                {
+                    "physicalName": "BFFINIT",
+                    "logicalName": "",
+                    "value": "INIT0"
+                },
+                {
+                    "physicalName": "CFF",
+                    "logicalName": "",
+                    "value": "#FF"
+                },
+                {
+                    "physicalName": "CFFSR",
+                    "logicalName": "",
+                    "value": "SRLOW"
+                },
+                {
+                    "physicalName": "CFFINIT",
+                    "logicalName": "",
+                    "value": "INIT1"
+                },
+                {
+                    "physicalName": "DFF",
+                    "logicalName": "",
+                    "value": "#FF"
+                },
+                {
+                    "physicalName": "DFFSR",
+                    "logicalName": "",
+                    "value": "SRLOW"
+                },
+                {
+                    "physicalName": "DFFINIT",
+                    "logicalName": "",
+                    "value": "INIT0"
+                },
+                {
+                    "physicalName": "AFFMUX",
+                    "logicalName": "",
+                    "value": "AX"
+                },
+                {
+                    "physicalName": "BFFMUX",
+                    "logicalName": "",
+                    "value": "BX"
+                },
+                {
+                    "physicalName": "CFFMUX",
+                    "logicalName": "",
+                    "value": "CX"
+                },
+                {
+                    "physicalName": "DFFMUX",
+                    "logicalName": "",
+                    "value": "DX"
+                },
+                {
+                    "physicalName": "CEUSED",
+                    "logicalName": "",
+                    "value": "0"
+                },
+                {
+                    "physicalName": "CLKINV",
+                    "logicalName": "",
+                    "value": "CLK"
+                }
+            ],
+            "enablePins": [
+                {
+                    "isOutputPin": false,
+                    "name": "CE"
+                }
+            ]
+        },
+        {
+            "name": "lower",
+            "primitiveType": "SLICEL",
+            "attributes": [
+                {
+                    "physicalName": "AFF",
+                    "logicalName": "",
+                    "value": "#FF"
+                },
+                {
+                    "physicalName": "AFFSR",
+                    "logicalName": "",
+                    "value": "SRLOW"
+                },
+                {
+                    "physicalName": "AFFINIT",
+                    "logicalName": "",
+                    "value": "INIT1"
+                },
+                {
+                    "physicalName": "BFF",
+                    "logicalName": "",
+                    "value": "#FF"
+                },
+                {
+                    "physicalName": "BFFSR",
+                    "logicalName": "",
+                    "value": "SRLOW"
+                },
+                {
+                    "physicalName": "BFFINIT",
+                    "logicalName": "",
+                    "value": "INIT0"
+                },
+                {
+                    "physicalName": "CFF",
+                    "logicalName": "",
+                    "value": "#FF"
+                },
+                {
+                    "physicalName": "CFFSR",
+                    "logicalName": "",
+                    "value": "SRLOW"
+                },
+                {
+                    "physicalName": "CFFINIT",
+                    "logicalName": "",
+                    "value": "INIT1"
+                },
+                {
+                    "physicalName": "DFF",
+                    "logicalName": "",
+                    "value": "#FF"
+                },
+                {
+                    "physicalName": "DFFSR",
+                    "logicalName": "",
+                    "value": "SRLOW"
+                },
+                {
+                    "physicalName": "DFFINIT",
+                    "logicalName": "",
+                    "value": "INIT0"
+                },
+                {
+                    "physicalName": "AFFMUX",
+                    "logicalName": "",
+                    "value": "AX"
+                },
+                {
+                    "physicalName": "BFFMUX",
+                    "logicalName": "",
+                    "value": "BX"
+                },
+                {
+                    "physicalName": "CFFMUX",
+                    "logicalName": "",
+                    "value": "CX"
+                },
+                {
+                    "physicalName": "DFFMUX",
+                    "logicalName": "",
+                    "value": "DX"
+                },
+                {
+                    "physicalName": "CEUSED",
+                    "logicalName": "",
+                    "value": "0"
+                },
+                {
+                    "physicalName": "CLKINV",
+                    "logicalName": "",
+                    "value": "CLK"
+                }
+            ],
+            "enablePins": [
+                {
+                    "isOutputPin": false,
+                    "name": "CE"
+                }
+            ]
+        }
+    ],
+    "nets": [
+        {
+            "name": "net1",
+            "netType": "WIRE",
+            "pins": [
+                {
+                    "isOutputPin": true,
+                    "name": "DQ",
+                    "instance": "upper"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "AX",
+                    "instance": "upper"
+                }
+            ]
+        },
+        {
+            "name": "net2",
+            "netType": "WIRE",
+            "pins": [
+                {
+                    "isOutputPin": true,
+                    "name": "CQ",
+                    "instance": "upper"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "DX",
+                    "instance": "upper"
+                }
+            ]
+        },
+        {
+            "name": "net3",
+            "netType": "WIRE",
+            "pins": [
+                {
+                    "isOutputPin": true,
+                    "name": "BQ",
+                    "instance": "upper"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "CX",
+                    "instance": "upper"
+                }
+            ]
+        },
+        {
+            "name": "net4",
+            "netType": "WIRE",
+            "pins": [
+                {
+                    "isOutputPin": true,
+                    "name": "AQ",
+                    "instance": "upper"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "BX",
+                    "instance": "upper"
+                }
+            ]
+        },
+        {
+            "name": "net5",
+            "netType": "WIRE",
+            "pins": [
+                {
+                    "isOutputPin": true,
+                    "name": "DQ",
+                    "instance": "lower"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "AX",
+                    "instance": "lower"
+                }
+            ]
+        },
+        {
+            "name": "net6",
+            "netType": "WIRE",
+            "pins": [
+                {
+                    "isOutputPin": true,
+                    "name": "CQ",
+                    "instance": "lower"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "DX",
+                    "instance": "lower"
+                }
+            ]
+        },
+        {
+            "name": "net7",
+            "netType": "WIRE",
+            "pins": [
+                {
+                    "isOutputPin": true,
+                    "name": "BQ",
+                    "instance": "lower"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "CX",
+                    "instance": "lower"
+                }
+            ]
+        },
+        {
+            "name": "net8",
+            "netType": "WIRE",
+            "pins": [
+                {
+                    "isOutputPin": true,
+                    "name": "AQ",
+                    "instance": "lower"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "BX",
+                    "instance": "lower"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "type": "IB",
+    "CLBsize": 1,
+    "instancesNum": 2,
+    "instances": [
+        {
+            "name": "upper",
+            "primitiveType": "SLICEL",
+            "attributes": [
+                {
+                    "physicalName": "A6LUT",
+                    "logicalName": "",
+                    "value": "#LUT:O6=~(~A6*~A5*~A4*~A3*~A2*A1)"
+                },
+                {
+                    "physicalName": "B6LUT",
+                    "logicalName": "",
+                    "value": "#LUT:O6=~(~A6*~A5*~A4*~A3*~A2*A1)"
+                },
+                {
+                    "physicalName": "C6LUT",
+                    "logicalName": "",
+                    "value": "#LUT:O6=~(~A6*~A5*~A4*~A3*~A2*A1)"
+                },
+                {
+                    "physicalName": "D6LUT",
+                    "logicalName": "",
+                    "value": "#LUT:O6=~(~A6*~A5*~A4*~A3*~A2*A1)"
+                }
+            ],
+            "enablePins": [
+                {
+                    "isOutputPin": false,
+                    "name": "A1"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "B1"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "C1"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "D1"
+                }
+            ]
+        },
+        {
+            "name": "lower",
+            "primitiveType": "SLICEL",
+            "attributes": [
+                {
+                    "physicalName": "A6LUT",
+                    "logicalName": "",
+                    "value": "#LUT:O6=~(~A6*~A5*~A4*~A3*~A2*A1)"
+                },
+                {
+                    "physicalName": "B6LUT",
+                    "logicalName": "",
+                    "value": "#LUT:O6=~(~A6*~A5*~A4*~A3*~A2*A1)"
+                },
+                {
+                    "physicalName": "C6LUT",
+                    "logicalName": "",
+                    "value": "#LUT:O6=~(~A6*~A5*~A4*~A3*~A2*A1)"
+                },
+                {
+                    "physicalName": "D6LUT",
+                    "logicalName": "",
+                    "value": "#LUT:O6=~(~A6*~A5*~A4*~A3*~A2*A1)"
+                }
+            ],
+            "enablePins": [
+                {
+                    "isOutputPin": false,
+                    "name": "A1"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "B1"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "C1"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "D1"
+                }
+            ]
+        }
+    ],
+    "nets": [
+    ]
+}

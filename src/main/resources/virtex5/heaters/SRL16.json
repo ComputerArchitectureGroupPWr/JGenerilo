@@ -1,0 +1,165 @@
+{
+    "type": "SRL16",
+    "CLBsize": 1,
+    "instancesNum": 2,
+    "instances": [
+        {
+            "name": "upper",
+            "primitiveType": "SLICEM",
+            "attributes": [
+                {
+                    "physicalName": "A6LUT",
+                    "logicalName": "",
+                    "value": "#RAM:O6=0x0000000000000000"
+                },
+                {
+                    "physicalName": "A6RAMMODE",
+                    "logicalName": "",
+                    "value": "SRL16"
+                },
+                {
+                    "physicalName": "AUSED",
+                    "logicalName": "",
+                    "value": "0"
+                },
+                {
+                    "physicalName": "CEUSED",
+                    "logicalName": "",
+                    "value": "0"
+                },
+                {
+                    "physicalName": "B6LUT",
+                    "logicalName": "",
+                    "value": "#RAM:O6=0x0000000000000000"
+                },
+                {
+                    "physicalName": "B6RAMMODE",
+                    "logicalName": "",
+                    "value": "SRL16"
+                },
+                {
+                    "physicalName": "BUSED",
+                    "logicalName": "",
+                    "value": "0"
+                },
+                {
+                    "physicalName": "C6LUT",
+                    "logicalName": "",
+                    "value": "#RAM:O6=0x0000000000000000"
+                },
+                {
+                    "physicalName": "C6RAMMODE",
+                    "logicalName": "",
+                    "value": "SRL16"
+                },
+                {
+                    "physicalName": "CUSED",
+                    "logicalName": "",
+                    "value": "0"
+                },
+                {
+                    "physicalName": "D6LUT",
+                    "logicalName": "",
+                    "value": "#RAM:O6=0x0000000000000000"
+                },
+                {
+                    "physicalName": "D6RAMMODE",
+                    "logicalName": "",
+                    "value": "SRL16"
+                },
+                {
+                    "physicalName": "DUSED",
+                    "logicalName": "",
+                    "value": "0"
+                },
+                {
+                    "physicalName": "CLKINV",
+                    "logicalName": "",
+                    "value": "CLK"
+                },
+                {
+                    "physicalName": "SYNC_ATTR",
+                    "logicalName": "",
+                    "value": "ASYNC"
+                },
+                {
+                    "physicalName": "WEMUX",
+                    "logicalName": "",
+                    "value": "CE"
+                }
+            ],
+            "enablePins": [
+                {
+                    "isOutputPin": false,
+                    "name": "CE"
+                }
+            ]
+        }
+    ],
+    "nets": [
+        {
+            "name": "net1",
+            "netType": "WIRE",
+            "pins": [
+                {
+                    "isOutputPin": true,
+                    "name": "A",
+                    "instance": "upper"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "AI",
+                    "instance": "upper"
+                }
+            ]
+        },
+        {
+            "name": "net2",
+            "netType": "WIRE",
+            "pins": [
+                {
+                    "isOutputPin": true,
+                    "name": "B",
+                    "instance": "upper"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "BI",
+                    "instance": "upper"
+                }
+            ]
+        },
+        {
+            "name": "net3",
+            "netType": "WIRE",
+            "pins": [
+                {
+                    "isOutputPin": true,
+                    "name": "C",
+                    "instance": "upper"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "CI",
+                    "instance": "upper"
+                }
+            ]
+        },
+        {
+            "name": "net4",
+            "netType": "WIRE",
+            "pins": [
+                {
+                    "isOutputPin": true,
+                    "name": "D",
+                    "instance": "upper"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "DI",
+                    "instance": "upper"
+                }
+            ]
+        }
+    ]
+}

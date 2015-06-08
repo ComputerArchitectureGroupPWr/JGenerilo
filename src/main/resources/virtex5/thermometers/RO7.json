@@ -1,0 +1,237 @@
+{
+    "type": "RO7",
+    "CLBsize": 1,
+    "instancesNum": 2,
+    "instances": [
+        {
+            "name": "upper",
+            "primitiveType": "SLICEL",
+            "attributes": [
+                {
+                    "physicalName": "A6LUT",
+                    "logicalName": "",
+                    "value": "#LUT:O6=~A4"
+                },
+                {
+                    "physicalName": "B6LUT",
+                    "logicalName": "",
+                    "value": "#LUT:O6=~A4"
+                },
+                {
+                    "physicalName": "C6LUT",
+                    "logicalName": "",
+                    "value": "#LUT:O6=~A4"
+                },
+                {
+                    "physicalName": "D6LUT",
+                    "logicalName": "",
+                    "value": "#LUT:O6=~A4"
+                },
+                {
+                    "physicalName": "AUSED",
+                    "logicalName": "",
+                    "value": "0"
+                },
+                {
+                    "physicalName": "BUSED",
+                    "logicalName": "",
+                    "value": "0"
+                },
+                {
+                    "physicalName": "CUSED",
+                    "logicalName": "",
+                    "value": "0"
+                },
+                {
+                    "physicalName": "DUSED",
+                    "logicalName": "",
+                    "value": "0"
+                }
+            ],
+            "enablePins": [
+            ]
+        },
+        {
+            "name": "lower",
+            "primitiveType": "SLICEL",
+            "attributes": [
+                {
+                    "physicalName": "A6LUT",
+                    "logicalName": "",
+                    "value": "#LUT:O6=~A4"
+                },
+                {
+                    "physicalName": "B6LUT",
+                    "logicalName": "",
+                    "value": "#LUT:O6=~A4"
+                },
+                {
+                    "physicalName": "C6LUT",
+                    "logicalName": "",
+                    "value": "#LUT:O6=~A4"
+                },
+                {
+                    "physicalName": "D6LUT",
+                    "logicalName": "",
+                    "value": "#LUT:O6=A4*A1"
+                },
+                {
+                    "physicalName": "AUSED",
+                    "logicalName": "",
+                    "value": "0"
+                },
+                {
+                    "physicalName": "BUSED",
+                    "logicalName": "",
+                    "value": "0"
+                },
+                {
+                    "physicalName": "CUSED",
+                    "logicalName": "",
+                    "value": "0"
+                },
+                {
+                    "physicalName": "DUSED",
+                    "logicalName": "",
+                    "value": "0"
+                }
+            ],
+            "enablePins": [
+                {
+                    "isOutputPin": false,
+                    "name": "D1"
+                }
+            ]
+        }
+    ],
+    "nets": [
+        {
+            "name": "net1",
+            "netType": "WIRE",
+            "pins": [
+                {
+                    "isOutputPin": true,
+                    "name": "D",
+                    "instance": "upper"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "C4",
+                    "instance": "upper"
+                }
+            ]
+        },
+        {
+            "name": "net2",
+            "netType": "WIRE",
+            "pins": [
+                {
+                    "isOutputPin": true,
+                    "name": "C",
+                    "instance": "upper"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "B4",
+                    "instance": "upper"
+                }
+            ]
+        },
+        {
+            "name": "net3",
+            "netType": "WIRE",
+            "pins": [
+                {
+                    "isOutputPin": true,
+                    "name": "B",
+                    "instance": "upper"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "A4",
+                    "instance": "upper"
+                }
+            ]
+        },
+        {
+            "name": "net4",
+            "netType": "WIRE",
+            "pins": [
+                {
+                    "isOutputPin": true,
+                    "name": "A",
+                    "instance": "upper"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "D4",
+                    "instance": "lower"
+                }
+            ]
+        },
+        {
+            "name": "net5",
+            "netType": "WIRE",
+            "pins": [
+                {
+                    "isOutputPin": true,
+                    "name": "D",
+                    "instance": "lower"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "C4",
+                    "instance": "lower"
+                }
+            ]
+        },
+        {
+            "name": "net6",
+            "netType": "WIRE",
+            "pins": [
+                {
+                    "isOutputPin": true,
+                    "name": "C",
+                    "instance": "lower"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "B4",
+                    "instance": "lower"
+                }
+            ]
+        },
+        {
+            "name": "net7",
+            "netType": "WIRE",
+            "pins": [
+                {
+                    "isOutputPin": true,
+                    "name": "B",
+                    "instance": "lower"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "A4",
+                    "instance": "lower"
+                }
+            ]
+        },
+        {
+            "name": "net8",
+            "netType": "WIRE",
+            "pins": [
+                {
+                    "isOutputPin": true,
+                    "name": "A",
+                    "instance": "lower"
+                },
+                {
+                    "isOutputPin": false,
+                    "name": "D4",
+                    "instance": "upper"
+                }
+            ]
+        }
+    ]
+}
